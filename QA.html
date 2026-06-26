@@ -13,8 +13,8 @@
 
 TakesScreenshot st = (TakesScreenshot)driver;
 File Source = st.getScreenshotAs(OutputType.FILE);
-String time = newDateSimple ("yyyy.MM.dd_MM.ss.HH").Format(new Date());
+String time = new SimpleDateFormat ("yyyy.MM.dd_MM.ss.HH").format(new Date());
 File Save = new File ("");
-FileUtils.TypeCopy(source,save );
+FileUtils.copyFile(source,save );
 </body>
 </html>
